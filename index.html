@@ -3,56 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - Bài tập Nâng cao</title>
+    <title>Thư Viện Ảnh - Dự Án Cuối Cùng</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Bước 2: Thêm liên kết Chuyển đến Nội dung chính -->
-    <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+    <!-- Yêu cầu 4: Skip link -->
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
 
     <header>
-        <h1>Trang Chủ Dữ Liệu Bài Tập</h1>
+        <h1>Dự Án Lập Trình Web Cá Nhân</h1>
     </header>
 
-    <!-- Bước 4 & 5: nav dạng inline-block và chứa ảnh đại diện -->
+    <!-- Yêu cầu 5 & 8: Thanh điều hướng Flexbox -->
     <nav>
-        <a href="index.html">
-            <img src="https://via.placeholder.com/50" alt="Logo trang web">
-        </a>
-        <a href="index.html">Trang chủ</a> |
-        <a href="about.html">Giới thiệu</a> |
-        <a href="contact.html">Liên hệ</a>
+        <a href="index.html">Bộ Cập Nhật Ảnh (5)</a>
+        <a href="about.html">Giới Thiệu</a>
+        <a href="contact.html">Liên Hệ</a>
     </nav>
 
-    <!-- Bước 2: Gán id="main" cho thẻ main -->
-    <main id="main">
-        <h2>Chào mừng bạn đến với trang web</h2>
-        <p>Trang web này được tối ưu hóa khả năng truy cập và sử dụng các kỹ thuật dàn trang hiện đại như CSS Grid và Flexbox.</p>
+    <main id="main-content">
+        <h2>Bộ Thư Viện 5 Hình Ảnh (CSS Grid &amp; Nth-Child)</h2>
+        <p>Mỗi hình ảnh dưới đây áp dụng mô hình hộp (Box Model) và có kiểu dáng viền thay đổi xen kẽ thông qua bộ chọn <code>:nth-child</code>.</p>
 
-        <!-- Bước 6, 7, 8: Sử dụng lớp grid -->
-        <h3>Khu vực hiển thị Grid (2 cột)</h3>
-        <section class="grid">
-            <div>
-                <img src="https://via.placeholder.com/400x250" alt="Hình ảnh ví dụ 1 cho Grid">
-                <p>Nội dung mô tả cho ô thứ nhất trong hệ thống lưới 2 cột.</p>
-            </div>
-            <div>
-                <img src="https://via.placeholder.com/400x250" alt="Hình ảnh ví dụ 2 cho Grid">
-                <p>Nội dung mô tả cho ô thứ hai trong hệ thống lưới 2 cột.</p>
-            </div>
-        </section>
-
-        <!-- Bước 9: Sử dụng lớp flex -->
-        <h3>Khu vực hiển thị Flexbox</h3>
-        <section class="flex">
-            <div>Phần tử Flex 1</div>
-            <div>Phần tử Flex 2</div>
-            <div>Phần tử Flex 3</div>
+        <!-- Yêu cầu 1 & 7: Grid chứa 5 hình ảnh -->
+        <section class="gallery-grid">
+            <figure class="gallery-item">
+                <img src="https://picsum.photos/id/1015/400/300" alt="Cảnh núi sông bạt ngàn dưới ánh nắng">
+                <figcaption>Hình 1: Phong cảnh thiên nhiên 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://picsum.photos/id/1018/400/300" alt="Dãy núi đá hoang sơ lúc hoàng hôn">
+                <figcaption>Hình 2: Phong cảnh thiên nhiên 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://picsum.photos/id/1025/400/300" alt="Chú chó nhỏ nằm cuộn tròn trên chăn">
+                <figcaption>Hình 3: Động vật dễ thương</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://picsum.photos/id/1039/400/300" alt="Thác nước chảy xiết giữa rừng cây xanh">
+                <figcaption>Hình 4: Dòng thác thiên nhiên</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://picsum.photos/id/1050/400/300" alt="Bờ biển ngập tràn ánh nắng bình minh">
+                <figcaption>Hình 5: Bãi biển bình minh</figcaption>
+            </figure>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Bài tập thiết kế web nâng cao.</p>
+        <p>&copy; 2026 Hồ Sơ Dự Án Hoàn Thành Khoá Học Coursera.</p>
     </footer>
 </body>
 </html>

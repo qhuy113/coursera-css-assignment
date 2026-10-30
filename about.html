@@ -3,54 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu - Bài tập Nâng cao</title>
+    <title>Giới Thiệu - Dự Án Cuối Cùng</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Bước 2: Thêm liên kết Chuyển đến Nội dung chính -->
-    <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
 
     <header>
-        <h1>Thông Tin Giới Thiệu</h1>
+        <h1>Dự Án Lập Trình Web Cá Nhân</h1>
     </header>
 
-    <!-- Bước 4 & 5: nav dạng inline-block -->
     <nav>
-        <a href="index.html">
-            <img src="https://via.placeholder.com/50" alt="Logo trang web">
-        </a>
-        <a href="index.html">Trang chủ</a> |
-        <a href="about.html">Giới thiệu</a> |
-        <a href="contact.html">Liên hệ</a>
+        <a href="index.html">Bộ Cập Nhật Ảnh (5)</a>
+        <a href="about.html">Giới Thiệu</a>
+        <a href="contact.html">Liên Hệ</a>
     </nav>
 
-    <!-- Bước 2: Gán id="main" cho thẻ main -->
-    <main id="main">
-        <h2>Mục tiêu của dự án nâng cao</h2>
-        <p>Dự án yêu cầu áp dụng thuộc tính <code>justify-content</code>, <code>align-items</code>, và <code>row-gap</code> cho Grid, kết hợp với <code>flex-wrap</code> cho Flexbox.</p>
+    <main id="main-content">
+        <h2>Thông Tin Kỹ Thuật Đã Triển Khai</h2>
+        <p>Dự án này tích hợp đầy đủ các tiêu chuẩn về khả năng truy cập (Accessibility) và cấu trúc HTML5 chuẩn mực.</p>
 
-        <!-- Khối Grid mẫu -->
-        <section class="grid">
-            <div>
-                <img src="https://via.placeholder.com/400x250" alt="Hình minh họa bài học 1">
-                <p>Hình ảnh trong lớp grid tự động điều chỉnh chiều rộng 100%.</p>
-            </div>
-            <div>
-                <img src="https://via.placeholder.com/400x250" alt="Hình minh họa bài học 2">
-                <p>Đảm bảo giao diện cân đối và chuẩn tương phản màu sắc WAVE.</p>
-            </div>
-        </section>
+        <!-- Yêu cầu 8: Flexbox layout -->
+        <section class="flex-container">
+            <article class="flex-card">
+                <h3>Khả Năng Truy Cập</h3>
+                <img src="https://picsum.photos/id/1060/350/200" alt="Người làm việc trên máy tính xách tay">
+                <p>Triển khai thẻ liên kết ẩn chuyển hướng thẳng tới <code>#main-content</code> khi người dùng thao tác phím Tab.</p>
+            </article>
 
-        <!-- Khối Flexbox mẫu -->
-        <section class="flex">
-            <div>Kỹ năng HTML5</div>
-            <div>Kỹ năng CSS3</div>
-            <div>Thiết kế Responsive</div>
+            <article class="flex-card">
+                <h3>CSS Grid &amp; Flexbox</h3>
+                <img src="https://picsum.photos/id/1062/350/200" alt="Chi tiết thiết kế kiến trúc hiện đại">
+                <p>Kết hợp linh hoạt hệ thống lưới linh hoạt Grid và các khối điều hướng Flexbox cân đối.</p>
+            </article>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Bài tập thiết kế web nâng cao.</p>
+        <p>&copy; 2026 Hồ Sơ Dự Án Hoàn Thành Khoá Học Coursera.</p>
     </footer>
 </body>
 </html>
