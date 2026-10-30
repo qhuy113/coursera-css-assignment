@@ -3,31 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu - Bài tập CSS</title>
-    <!-- Bước 2: Liên kết file CSS -->
+    <title>Giới thiệu - Bài tập Nâng cao</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Bước 2: Thêm liên kết Chuyển đến Nội dung chính -->
+    <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+
     <header>
         <h1>Thông Tin Giới Thiệu</h1>
     </header>
 
+    <!-- Bước 4 & 5: nav dạng inline-block -->
     <nav>
-        <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
+        <a href="index.html">
+            <img src="https://via.placeholder.com/50" alt="Logo trang web">
+        </a>
+        <a href="index.html">Trang chủ</a> |
+        <a href="about.html">Giới thiệu</a> |
+        <a href="contact.html">Liên hệ</a>
     </nav>
 
-    <main>
-        <h2>Về bài tập này</h2>
-        <p>Mục tiêu chính là áp dụng các thuộc tính CSS cơ bản như thay đổi họ phông chữ, kích thước chữ, màu nền, căn chỉnh văn bản và tùy biến hiển thị của thẻ danh sách.</p>
-        <p>Sau khi thiết lập mã nguồn, dự án được tải lên GitHub Pages để phục vụ hoạt động chấm điểm ngang hàng (peer-review).</p>
+    <!-- Bước 2: Gán id="main" cho thẻ main -->
+    <main id="main">
+        <h2>Mục tiêu của dự án nâng cao</h2>
+        <p>Dự án yêu cầu áp dụng thuộc tính <code>justify-content</code>, <code>align-items</code>, và <code>row-gap</code> cho Grid, kết hợp với <code>flex-wrap</code> cho Flexbox.</p>
+
+        <!-- Khối Grid mẫu -->
+        <section class="grid">
+            <div>
+                <img src="https://via.placeholder.com/400x250" alt="Hình minh họa bài học 1">
+                <p>Hình ảnh trong lớp grid tự động điều chỉnh chiều rộng 100%.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/400x250" alt="Hình minh họa bài học 2">
+                <p>Đảm bảo giao diện cân đối và chuẩn tương phản màu sắc WAVE.</p>
+            </div>
+        </section>
+
+        <!-- Khối Flexbox mẫu -->
+        <section class="flex">
+            <div>Kỹ năng HTML5</div>
+            <div>Kỹ năng CSS3</div>
+            <div>Thiết kế Responsive</div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Bài tập thiết kế web cơ bản.</p>
+        <p>&copy; 2026 Bài tập thiết kế web nâng cao.</p>
     </footer>
 </body>
 </html>

@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ - Bài tập CSS</title>
-    <!-- Bước 2: Liên kết file CSS -->
+    <title>Liên hệ - Bài tập Nâng cao</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Bước 2: Thêm liên kết Chuyển đến Nội dung chính -->
+    <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+
     <header>
         <h1>Trang Liên Hệ</h1>
     </header>
 
+    <!-- Bước 4 & 5: nav dạng inline-block -->
     <nav>
-        <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
+        <a href="index.html">
+            <img src="https://via.placeholder.com/50" alt="Logo trang web">
+        </a>
+        <a href="index.html">Trang chủ</a> |
+        <a href="about.html">Giới thiệu</a> |
+        <a href="contact.html">Liên hệ</a>
     </nav>
 
-    <main>
-        <h2>Gửi phản hồi</h2>
-        <p>Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào về giao diện trang web, vui lòng liên hệ qua hệ thống đánh giá bài tập Coursera.</p>
-        <p>Cảm ơn bạn đã dành thời gian kiểm tra và đánh giá bài nộp này!</p>
+    <!-- Bước 2: Gán id="main" cho thẻ main -->
+    <main id="main">
+        <h2>Gửi thông tin phản hồi</h2>
+        <p>Vui lòng để lại ý kiến đóng góp hoặc đánh giá bài nộp thông qua hệ thống Peer Review trên Coursera.</p>
+
+        <!-- Khối Grid mẫu -->
+        <section class="grid">
+            <div>
+                <img src="https://via.placeholder.com/400x250" alt="Ảnh văn phòng làm việc">
+                <p>Địa chỉ văn phòng hỗ trợ học viên trực tuyến.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/400x250" alt="Ảnh dịch vụ hỗ trợ">
+                <p>Thời gian phản hồi bình luận từ 24h - 48h.</p>
+            </div>
+        </section>
+
+        <!-- Khối Flexbox mẫu -->
+        <section class="flex">
+            <div>Email: support@coursera.org</div>
+            <div>Hotline: 1800-0000</div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Bài tập thiết kế web cơ bản.</p>
+        <p>&copy; 2026 Bài tập thiết kế web nâng cao.</p>
     </footer>
 </body>
 </html>

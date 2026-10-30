@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - Bài tập CSS</title>
-    <!-- Bước 2: Liên kết file CSS -->
+    <title>Trang chủ - Bài tập Nâng cao</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Bước 2: Thêm liên kết Chuyển đến Nội dung chính -->
+    <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+
     <header>
         <h1>Trang Chủ Dữ Liệu Bài Tập</h1>
     </header>
 
+    <!-- Bước 4 & 5: nav dạng inline-block và chứa ảnh đại diện -->
     <nav>
-        <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
+        <a href="index.html">
+            <img src="https://via.placeholder.com/50" alt="Logo trang web">
+        </a>
+        <a href="index.html">Trang chủ</a> |
+        <a href="about.html">Giới thiệu</a> |
+        <a href="contact.html">Liên hệ</a>
     </nav>
 
-    <main>
+    <!-- Bước 2: Gán id="main" cho thẻ main -->
+    <main id="main">
         <h2>Chào mừng bạn đến với trang web</h2>
-        <p>Đây là trang web mẫu được tạo để thực hành liên kết bảng kiểu CSS đơn lẻ với nhiều tệp HTML khác nhau theo yêu cầu bài tập của Coursera.</p>
-        <p>Tất cả các thành phần giao diện được định kiểu qua quy tắc CSS cơ bản, đáp ứng các tiêu chuẩn về độ tương phản màu sắc WAVE.</p>
+        <p>Trang web này được tối ưu hóa khả năng truy cập và sử dụng các kỹ thuật dàn trang hiện đại như CSS Grid và Flexbox.</p>
+
+        <!-- Bước 6, 7, 8: Sử dụng lớp grid -->
+        <h3>Khu vực hiển thị Grid (2 cột)</h3>
+        <section class="grid">
+            <div>
+                <img src="https://via.placeholder.com/400x250" alt="Hình ảnh ví dụ 1 cho Grid">
+                <p>Nội dung mô tả cho ô thứ nhất trong hệ thống lưới 2 cột.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/400x250" alt="Hình ảnh ví dụ 2 cho Grid">
+                <p>Nội dung mô tả cho ô thứ hai trong hệ thống lưới 2 cột.</p>
+            </div>
+        </section>
+
+        <!-- Bước 9: Sử dụng lớp flex -->
+        <h3>Khu vực hiển thị Flexbox</h3>
+        <section class="flex">
+            <div>Phần tử Flex 1</div>
+            <div>Phần tử Flex 2</div>
+            <div>Phần tử Flex 3</div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Bài tập thiết kế web cơ bản.</p>
+        <p>&copy; 2026 Bài tập thiết kế web nâng cao.</p>
     </footer>
 </body>
 </html>

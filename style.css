@@ -1,4 +1,19 @@
-/* Bước 3: Thẻ body - phông chữ và kích thước phông chữ */
+/* Styling cho link "Skip to Main Content" */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: #ffffff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Các quy tắc cơ bản từ bài 1 */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -6,58 +21,73 @@ body {
     padding: 0;
 }
 
-/* Bước 4: Thẻ header - màu nền */
 header {
-    background-color: #1a365d; /* Xanh đậm */
+    background-color: #1a365d;
     padding: 20px;
 }
 
-/* Bước 5: Thẻ nav - màu nền */
-nav {
-    background-color: #2b6cb0; /* Xanh vừa */
-    padding: 10px;
-}
-
-/* Bước 6: Thẻ main - màu nền và kích thước phông chữ */
-main {
-    background-color: #f7fafc; /* Màu xám rất nhạt */
-    font-size: 18px;
-    padding: 20px;
-}
-
-/* Bước 7: Thẻ footer - màu nền */
-footer {
-    background-color: #1a365d; /* Xanh đậm */
-    padding: 15px;
-    color: #ffffff;
-}
-
-/* Bước 8: Thẻ li - hiển thị hàng ngang và chiều rộng */
+/* Bước 3: Nhận xét (comment out) kiểu dáng cũ của phần tử li */
+/* 
 li {
     display: inline-block;
     width: 120px;
 }
+*/
 
-/* Bước 9: Thẻ h1 - căn chỉnh văn bản, phông chữ và màu sắc */
+/* Bước 4: Thẻ nav sử dụng inline-block và width khoảng 80% */
+nav {
+    background-color: #2b6cb0;
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+}
+
+/* Bước 5: Bộ chọn hậu duệ (descendant selector) cho hình ảnh trong nav */
+nav img {
+    width: 10%;
+}
+
+/* Các thuộc tính chung cho main & footer */
+main {
+    background-color: #f7fafc;
+    font-size: 18px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #1a365d;
+    padding: 15px;
+    color: #ffffff;
+}
+
 h1 {
     text-align: center;
     font-family: Georgia, serif;
-    color: #ffffff; /* Trắng nổi bật trên nền xanh đậm (Đạt chuẩn WAVE) */
+    color: #ffffff;
 }
 
-/* Bước 10: Thẻ p - chiều cao dòng */
 p {
     line-height: 1.6;
-    color: #2d3748; /* Chữ màu xám đậm dễ đọc */
+    color: #2d3748;
 }
 
-/* Phong cách bổ sung cho đường liên kết điều hướng */
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+/* Bước 6 & 8: Lớp grid sử dụng CSS Grid 2 cột (~40% mỗi cột) */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between; /* Hoặc center / space-around */
+    align-items: center;
+    row-gap: 20px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Bước 7: Bộ chọn hậu duệ cho hình ảnh bên trong lớp grid */
+.grid img {
+    width: 100%;
+}
+
+/* Bước 9: Lớp flex sử dụng CSS Flexbox */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Hoặc space-between / center */
 }
