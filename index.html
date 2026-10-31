@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thư Viện Ảnh - Dự Án Cuối Cùng</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạo một Stylesheet Responsive</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Yêu cầu 4: Skip link -->
-    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+  <h1>Thư viện Responsive Cơ bản</h1>
+  
+  <div class="card">
+    <img src="https://picsum.photos/id/1015/400/300" alt="Hình minh họa 1">
+    <p>Nội dung mô tả cho thẻ thứ nhất.</p>
+  </div>
 
-    <header>
-        <h1>Dự Án Lập Trình Web Cá Nhân</h1>
-    </header>
+  <div class="card">
+    <img src="https://picsum.photos/id/1025/400/300" alt="Hình minh họa 2">
+    <p>Nội dung mô tả cho thẻ thứ hai.</p>
+  </div>
 
-    <!-- Yêu cầu 5 & 8: Thanh điều hướng Flexbox -->
-    <nav>
-        <a href="index.html">Bộ Cập Nhật Ảnh (5)</a>
-        <a href="about.html">Giới Thiệu</a>
-        <a href="contact.html">Liên Hệ</a>
-    </nav>
-
-    <main id="main-content">
-        <h2>Bộ Thư Viện 5 Hình Ảnh (CSS Grid &amp; Nth-Child)</h2>
-        <p>Mỗi hình ảnh dưới đây áp dụng mô hình hộp (Box Model) và có kiểu dáng viền thay đổi xen kẽ thông qua bộ chọn <code>:nth-child</code>.</p>
-
-        <!-- Yêu cầu 1 & 7: Grid chứa 5 hình ảnh -->
-        <section class="gallery-grid">
-            <figure class="gallery-item">
-                <img src="https://picsum.photos/id/1015/400/300" alt="Cảnh núi sông bạt ngàn dưới ánh nắng">
-                <figcaption>Hình 1: Phong cảnh thiên nhiên 1</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="https://picsum.photos/id/1018/400/300" alt="Dãy núi đá hoang sơ lúc hoàng hôn">
-                <figcaption>Hình 2: Phong cảnh thiên nhiên 2</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="https://picsum.photos/id/1025/400/300" alt="Chú chó nhỏ nằm cuộn tròn trên chăn">
-                <figcaption>Hình 3: Động vật dễ thương</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="https://picsum.photos/id/1039/400/300" alt="Thác nước chảy xiết giữa rừng cây xanh">
-                <figcaption>Hình 4: Dòng thác thiên nhiên</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="https://picsum.photos/id/1050/400/300" alt="Bờ biển ngập tràn ánh nắng bình minh">
-                <figcaption>Hình 5: Bãi biển bình minh</figcaption>
-            </figure>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Hồ Sơ Dự Án Hoàn Thành Khoá Học Coursera.</p>
-    </footer>
+  <div class="card">
+    <img src="https://picsum.photos/id/1039/400/300" alt="Hình minh họa 3">
+    <p>Nội dung mô tả cho thẻ thứ ba.</p>
+  </div>
 </body>
 </html>
